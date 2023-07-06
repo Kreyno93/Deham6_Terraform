@@ -1,7 +1,18 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+provider "aws" {
+  region = "us-west-2"
+}
 resource "aws_s3_bucket" "dev" {
   bucket = "neufische-dev-bucket"
   tags = {
-    Name        = "My New Bucket"
+    Name        = "Deham6_Dev_Bucket_1337"
     Environment = "Dev"
   }
 }
