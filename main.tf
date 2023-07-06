@@ -10,7 +10,7 @@ provider "aws" {
 } */
 
 resource "aws_instance" "deham6demos"{
-    ami = "ami-0fa167c2af1ea0840"
+    ami = "ami-01d0d89dc7786720b"
     instance_type = "t3.micro"
     key_name = "vockey"
     vpc_security_group_ids = ["sg-07053caff48096429"]
