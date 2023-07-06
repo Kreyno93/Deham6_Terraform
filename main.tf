@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-north-1"
 }
 /* resource "aws_s3_bucket" "dev" {
   bucket = "neufische-dev-bucket"
@@ -13,8 +13,8 @@ resource "aws_instance" "deham6demos"{
     ami = "ami-0fa167c2af1ea0840"
     instance_type = "t2.micro"
     key_name = "vockey"
-    vpc_security_group_ids = ["sg-0d37af370928a15d5"]
-    subnet_id = "subnet-0b4e690242ed46166"
+    vpc_security_group_ids = ["sg-07053caff48096429"]
+    subnet_id = "subnet-07e16952d8589584f"
     tags = {
         Name = "deham6demos"
     }
